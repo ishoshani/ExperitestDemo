@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.isho.experitestdemo.Login">
+
+    <EditText
+        android:id="@+id/matchText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="These Must"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.4" />
+
+        <EditText
+            android:id="@+id/matchText2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:ems="10"
+            android:layout_below="@id/matchText1"
+            android:inputType="textPersonName"
+            android:hint = "Match"
+            app:layout_constraintTop_toBottomOf="@id/matchText1"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+
+            />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/matchText2"
+            android:text="Login"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/matchText2"
+            />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifiBox"
+            android:text="WIFI"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/GPSBox"
+            app:layout_constraintRight_toLeftOf="@+id/WebBox"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GPSBox"
+            android:text="Lat: 000  Long: 000"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wifiBox"
+            app:layout_constraintRight_toLeftOf="@+id/WebBox"
+            />
+
+
+        
+        
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

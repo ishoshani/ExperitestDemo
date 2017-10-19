@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.isho.experitestdemo.GameActivity"
+    tools:showIn="@layout/activity_game">
+
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/gameGuidelineT"
+
+        app:layout_constraintGuide_percent="0.62" />
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/gameGuidelineB"
+        app:layout_constraintGuide_percent="1.0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/counter"
+            android:text="0"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/gameGuidelineB"
+            app:layout_constraintTop_toBottomOf="@id/gameGuidelineT"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+          />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer"
+        android:text="3.00"
+        android:textSize="120sp"
+        app:layout_constraintBottom_toTopOf="@+id/gameGuidelineB"
+        app:layout_constraintTop_toBottomOf="@id/counter"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Again"
+        android:id="@+id/AgainButton"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/ExitButton"
+        app:layout_constraintLeft_toRightOf="@id/AgainButton"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:visibility="invisible"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/clicker_button"
+        android:src="@drawable/black"
+        app:layout_editor_absoluteX="253dp"
+        app:layout_editor_absoluteY="485dp"
+        android:visibility="visible"
+        />
+
+</android.support.constraint.ConstraintLayout>
