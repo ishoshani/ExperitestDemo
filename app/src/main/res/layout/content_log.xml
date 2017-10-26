@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/log_scroller"
+    app:layout_constraintBottom_toTopOf="@+id/WebBox"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.isho.experitestdemo.LogActivity"
+    tools:showIn="@layout/activity_log">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:id="@+id/logText"
+        android:text="@string/large_text" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deletebutton"
+        android:layout_below="@+id/logText"/>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+

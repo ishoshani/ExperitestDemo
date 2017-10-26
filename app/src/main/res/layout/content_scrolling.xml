@@ -2,10 +2,11 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/WebBox"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.isho.experitestdemo.ScrollingActivity"
+    tools:context="com.example.isho.experitestdemo.RecordsActivity"
     tools:showIn="@layout/activity_scrolling">
 
     <TextView
@@ -14,5 +15,8 @@
         android:layout_margin="@dimen/text_margin"
         android:id="@+id/recordsView"
         android:text="place holder" />
+
+
+
 
 </android.support.v4.widget.NestedScrollView>

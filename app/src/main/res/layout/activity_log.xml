@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.isho.experitestdemo.LogActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/content_log" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statsBox"
+            app:layout_constraintVertical_bias=".9"
+            app:layout_constraintLeft_toRightOf="@+id/WebBox"
+            app:layout_constraintBottom_toTopOf="parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wifiBox"
+                android:text="WIFI"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/GPSBox"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GPSBox"
+                android:text="Lat: 000  Long: 000"
+                app:layout_constraintTop_toBottomOf="@+id/wifiBox"
+                />
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+        <WebView
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:id="@+id/WebBox"
+            app:layout_constraintHeight_max="100dp"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

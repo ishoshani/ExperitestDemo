@@ -38,4 +38,42 @@
         app:layout_constraintLeft_toRightOf="parent"
 app:layout_constraintTop_toBottomOf="@id/LogsButton"
         />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statsBox"
+        app:layout_constraintLeft_toRightOf="@+id/WebBox"
+        app:layout_constraintBottom_toTopOf="parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifiBox"
+            android:text="WIFI"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/GPSBox"
+            app:layout_constraintRight_toLeftOf="@+id/WebBox"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GPSBox"
+            android:text="Lat: 000  Long: 000"
+            app:layout_constraintBottom_toTopOf="@+id/WebBox"
+            app:layout_constraintTop_toBottomOf="@+id/wifiBox"
+            />
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    <WebView
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:id="@+id/WebBox"
+        app:layout_constraintHeight_max="100dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"/>
 </android.support.constraint.ConstraintLayout>
