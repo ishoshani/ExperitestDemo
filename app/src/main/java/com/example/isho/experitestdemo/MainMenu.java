@@ -109,7 +109,7 @@ public class MainMenu extends AppCompatActivity {
         if (permission == PermissionChecker.PERMISSION_GRANTED) {
             TimeZone tz = TimeZone.getDefault();
             String tzName = tz.getID();
-            log.log("sent request for time at "+tzName);
+            //log.log("sent request for time at "+tzName);
             webBox.loadUrl("https://experitest-server.herokuapp.com?size=12px&tz="+tzName);
         }
 

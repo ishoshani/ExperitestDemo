@@ -24,7 +24,7 @@ public class TimeHandler extends AsyncTask<Double,Double,Boolean> {
             try {
                 synchronized (this) {
                     this.wait(1);
-                    setTime -= 0.1;
+                    setTime -= 0.001;
                     publishProgress(setTime);
                 }
             } catch (InterruptedException e){

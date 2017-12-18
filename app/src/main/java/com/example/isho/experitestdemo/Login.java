@@ -63,7 +63,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 log.log("pressed Login Button");
-                 if(topField.getText().toString().equals(bottomField.getText().toString())){
+                 if(topField.getText().toString().equals(bottomField.getText().toString())&&!topField.getText().toString().isEmpty()){
                     log.log("Successfully logged in");
                     GoToNextActivity(view);
                 }
